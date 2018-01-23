@@ -39,9 +39,9 @@
 #include "t1_c1_packet_decoder.h"
 
 
-#if !defined(__ANDROID__)
-#include <immintrin.h>
-#endif
+//#if !defined(__ANDROID__)  Uncomment on the raspberry pi - This kept getting me a compiler error msg.
+//#include <immintrin.h>
+//#endif
 
 
 static float lp_1600kHz_56kHz(int sample, size_t i_or_q)
